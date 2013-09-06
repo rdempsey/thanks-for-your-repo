@@ -10,8 +10,13 @@ function showRequest(formData, jqForm, options) {
 
   // Split the query string to get the individual values
   var vars = queryString.split("&");
-  var gru = vars[0];
-  var th = vars[1];
+  var gpn = vars[0];      // Github project name
+  var gru = vars[1];      // Github repo url
+  var th = vars[2];       // Twitter handle
+
+  // Get the value for the Github repo
+  var gpn_vars = gpn.split("=")
+  var githubProjectName = gpn_vars[1]
 
   // Get the value for the Github repo
   var gru_vars = gru.split("=")
@@ -23,7 +28,7 @@ function showRequest(formData, jqForm, options) {
 
   //Show an alert with the Twitter image link
   alert("Here's the code you want to put into your README: \n\n" +
-      "<a href=\"http://twitter.com/home/?status=Thanks @" + twitterHandle + " for " + githubRepoUrl + "\"><img src=\"http://placehold.it/100x50\" alt=\"Say Thanks\" /></a>"
+      "<a href=\"http://twitter.com/home/?status=Thanks @" + twitterHandle + " for making " + githubProjectName + ": " + githubRepoUrl + "\"><img src=\"http://placehold.it/100x50\" alt=\"Say Thanks\" /></a>"
   ); 
 
   // here we could return false to prevent the form from being submitted; 
