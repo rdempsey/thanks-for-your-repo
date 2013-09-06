@@ -12,8 +12,17 @@
   <link rel="stylesheet" href="css/media_queries.css">
   <link rel="stylesheet" href="css/code.css">
   <link rel="stylesheet" href="http://f.fontdeck.com/s/css/m6Lez9WflF3tDDcWVkR43JhhHws/intridea.github.com/21671.css" type="text/css" />
-
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script> 
+  <script src="http://malsup.github.com/jquery.form.js"></script>
   <script src="js/libs/modernizr-2.5.3.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() { 
+    var options = { 
+        beforeSubmit:  showRequest,  // pre-submit callback 
+    }; 
+    $('#inputForm').ajaxForm(options); 
+});
+  </script>
 </head>
 <body>
   <div id="container">
@@ -37,18 +46,36 @@
   <div role="main" id="content" class="cf">
   <div class="col">
     <h2>What is Thanks For Your Repo?</h2>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <p>People want to thank you for the open source project you created. Thanks For Your Repo makes it easy for people to do so. By filling out the form below with your Github repo URL and Twitter handle, we'll give you a piece of code that you can add to your README file that displays a little "Say Thanks" button. When someone clicks on that button, it'll create a thank you tweet that they can send out.</p>
+
+    <h2>An Example Button</h2>
+    <p>
+      <a href="http://twitter.com/home/?status=Thanks @intridea for https%3A%2F%2Fgithub.com%2Fintridea%2Fthanks-for-your-repo"><img src="http://placehold.it/100x50" alt="Say Thanks" /></a>
+    </p>
         
     <h2>Getting Started</h2>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<p>
+    <p>Simply fill out the form below and we'll generate the Say Thanks button code for you!</p>
+    <p>
+      <form id="inputForm" action="#">
+        <table>
+          <tr>
+            <td>Your Github Repo URL:</td>
+            <td><input name="githubRepoUrl" type="text" value="https://github.com/intridea/thanks-for-your-repo" /></td>
+          </tr>
+          <tr>
+            <td>Your Twitter Handle:</td>
+            <td><input name="twitterHandle" type="text" value="intridea" /></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td><input type="submit" value="Get Your Link" /></td>
+          </tr>
+        </table>
+      </form>
+    </p>
   </div>
   
   <div class="col">
-    <h2>Resources</h2>
-    <ul>
-      <li><a href="docs/index.html">Documentation</a> - YARD documentation for TFYR.</li>
-    </ul>
-    
     <h2>Created & Maintained By:</h2>
     <div id="author" class="cf">
       <section class="bio">
@@ -75,12 +102,8 @@
   </section>
   </footer>
 </div>
-
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
-    
-  <script src="js/plugins.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/plugins.js"></script>
   <script src="js/css3-mediaqueries.js"></script> 
   <script type="text/javascript" src="js/retina.js"></script>
   

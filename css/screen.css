@@ -235,12 +235,7 @@ pre{
     padding:0;
     margin: 5px 0;
 }
-#content img {
-	width: 100%;
-	margin: 15px 0 0 0;
-	display: block;
-	overflow: hidden;
-}
+
 #content a,#content a:visited {
 	color:#A17EA4;
 	text-decoration: none;
