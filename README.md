@@ -17,7 +17,7 @@ Simply fill out the form at [http://intridea.github.io/thanks-for-your-repo/](ht
 You're encouraged to submit pull requests, propose features and discuss issues.
 
 * Fork the project
-* Write tests for your new feature or a test that reproduces a bug
+* Test your code, one way or another :)
 * Implement your feature or make a bug fix
 * Add a line to CHANGELOG.md describing your change
 * Commit, push and make a pull request. Bonus points for topic branches.
