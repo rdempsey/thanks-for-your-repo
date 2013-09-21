@@ -1,7 +1,7 @@
 Thanks For Your Repo
 ====================
 
-<a href="http://twitter.com/home/?status=Thanks @rdempsey for https%3A%2F%2Fgithub.com%2Fintridea%2Fthanks-for-your-repo"><img src="http://placehold.it/100x50" alt="Say Thanks" /></a>
+<a href="http://twitter.com/home/?status=Thanks @rdempsey for https%3A%2F%2Fgithub.com%2Frdempsey%2Fthanks-for-your-repo"><img src="http://placehold.it/100x50" alt="Say Thanks" /></a>
 
 ## What is Thanks For Your Repo?
 
