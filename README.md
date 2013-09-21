@@ -1,7 +1,7 @@
 Thanks For Your Repo
 ====================
 
-<a href="http://twitter.com/home/?status=Thanks @intridea for https%3A%2F%2Fgithub.com%2Fintridea%2Fthanks-for-your-repo"><img src="http://placehold.it/100x50" alt="Say Thanks" /></a>
+<a href="http://twitter.com/home/?status=Thanks @rdempsey for https%3A%2F%2Fgithub.com%2Fintridea%2Fthanks-for-your-repo"><img src="http://placehold.it/100x50" alt="Say Thanks" /></a>
 
 ## What is Thanks For Your Repo?
 
@@ -10,7 +10,7 @@ People want to thank you for the open source project you created. Thanks For You
 
 ## Basic Usage
 
-Simply fill out the form at [http://intridea.github.io/thanks-for-your-repo/](http://intridea.github.io/thanks-for-your-repo/) and we'll generate the Say Thanks button code for you! Then, copy and paste the code from the alert box into the README file of your project.
+Simply fill out the form at [http://rdempsey.github.io/thanks-for-your-repo/](http://rdempsey.github.io/thanks-for-your-repo/) and we'll generate the Say Thanks button code for you! Then, copy and paste the code from the alert box into the README file of your project.
 
 ## Contributing To Thanks For Your Repo
 
@@ -28,4 +28,4 @@ MIT License. See LICENSE for details.
 
 ## Copyright
 
-Copyright (c) 2013 Robert Dempsey, and Intridea, Inc.
+Copyright (c) 2013 Robert Dempsey
