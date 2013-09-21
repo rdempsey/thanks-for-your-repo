@@ -1,120 +1,79 @@
-<!doctype html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-  <title>Thanks For Your Repo | Get Thanks For Your Github Projects</title>
-  <meta name="description" content="Thanks For Your Repo is an easy way to allow people to thank you for your Github project">
-  <meta name="viewport" content="width=device-width">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<!DOCTYPE html>
+<html>
 
-  <link rel="stylesheet" href="css/home_style.css">
-  <link rel="stylesheet" href="css/screen.css">
-  <link rel="stylesheet" href="css/media_queries.css">
-  <link rel="stylesheet" href="css/code.css">
-  <link rel="stylesheet" href="http://f.fontdeck.com/s/css/m6Lez9WflF3tDDcWVkR43JhhHws/intridea.github.com/21671.css" type="text/css" />
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script> 
-  <script src="http://malsup.github.com/jquery.form.js"></script>
-  <script src="js/libs/modernizr-2.5.3.min.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function() { 
-    var options = { 
-        beforeSubmit:  showRequest,  // pre-submit callback 
-    }; 
-    $('#inputForm').ajaxForm(options); 
-});
-  </script>
-</head>
-<body>
-  <div id="container">
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Thanks For Your Repo : Add a button to your README and get thanked for your project. http://rdempsey.github.io/thanks-for-your-repo/" />
 
-  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-  <header class="cf">
-    <section>
-        <a href="http://robertwdempsey.com?ref=thanks-for-your-repo" id="tag"></a>
-    <div id="title">
-      <h1>Thanks For Your Repo</h1>
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Thanks For Your Repo</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/rdempsey/thanks-for-your-repo">View on GitHub</a>
+
+          <h1 id="project_title">Thanks For Your Repo</h1>
+          <h2 id="project_tagline">Add a button to your README and get thanked for your project. http://rdempsey.github.io/thanks-for-your-repo/</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/rdempsey/thanks-for-your-repo/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/rdempsey/thanks-for-your-repo/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
     </div>
-    <div id="quick_links" class="cf">
-      <span class="button_outer"><a href="https://github.com/rdempsey/thanks-for-your-repo/" alt="" class="button">Fork this on Github</a></span>
-      <span class="button_outer"><a href="https://github.com/rdempsey/thanks-for-your-repo/issues" alt="" class="button">Report a Problem</a></span>       
-    </div>
-    </section>
-  </header>
-  <div id="header_border"></div>
-  <div id="content_container">
-  <div role="main" id="content" class="cf">
-  <div class="col">
-    <h2>What is Thanks For Your Repo?</h2>
-    <p>People want to thank you for the open source project you created. Thanks For Your Repo makes it easy for people to do so. By filling out the form below with your Github repo URL and Twitter handle, we'll give you a piece of code that you can add to your README file that displays a little "Say Thanks" button. When someone clicks on that button, it'll create a thank you tweet that they can send out.</p>
-        
-    <h2>Getting Started</h2>
-    <p>Simply fill out the form below and we'll generate the Say Thanks button code for you! Then, copy and paste the code from the alert box into the README file of your project.</p>
-    <p>&nbsp;</p>
-    <p>
-      <form id="inputForm" action="#">
-        <table>
-          <tr>
-            <td>Project Name:</td>
-            <td><input name="githubProjectName" type="text" value="" /></td>
-          </tr>
-          <tr>
-            <td>Github Repo URL:</td>
-            <td><input name="githubRepoUrl" type="text" value="" /></td>
-          </tr>
-          <tr>
-            <td>Your Twitter Handle:</td>
-            <td><input name="twitterHandle" type="text" value="" /></td>
-          </tr>
-          <tr>
-            <td>&nbsp;</td>
-            <td><input type="submit" value="Get Your Link" /></td>
-          </tr>
-        </table>
-      </form>
-    </p>
-  </div>
-  
-  <div class="col">
-    <h2>An Example Button</h2>
-    <p>Click on the button below to see how it works. And don't forget to actually send the tweet :)</p>
-    <p>
-      <a href="http://twitter.com/home/?status=Thanks @rdempsey for making Thanks+For+Your+Repo: https%3A%2F%2Fgithub.com%2Fintridea%2Fthanks-for-your-repo%2F"><img src="http://placehold.it/100x50" alt="Say Thanks" /></a>
-    </p>
 
-    <h2>Created By:</h2>
-    <div id="author" class="cf">
-      <section class="bio">
-        <h1>Robert Dempsey</h1>
-        <ul class="author-links cf">
-          <li class="icn_twitter"><a href="https://twitter.com/rdempsey">@rdempsey</a></li>
-          <li class="icn_world"><a href="http://robertwdempsey.com/">Blog</a></li>
-        </ul>
-        <p>Leaving a culinary career behind for a career in tech, Robert has more than 14 years experience building businesses, developing web applications, conducting conferences, and generally geeking out with a combination of marketing and tech.</p>
-        <p>Prior to joining <a href="http://www.intridea.com">Intridea</a> as the Director of Engagement, Robert was the CEO of Dempsey Marketing, helping an international clientele gain more business using his system of Trifecta Marketing. Before that, he was the CEO of Atlantic Dominion Solutions, a Ruby on Rails development firm that served clients including Chrysler. He also created and chaired the first Ruby on Rails conference in the southeast - Acts as Conference - two years in a row.</p>
-        <p>Today you'll find Rob promoting Intridea at conferences and meetups, or slinging Ruby, Python and R to mine the Intridea web and CRM analytics.</p>
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>
+<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+
+<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+
+<pre><code>$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages
+</code></pre>
+
+<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+
+<h3>
+<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+
+<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+
+<h3>
+<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+
+<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+
+<h3>
+<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+
+<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+
+<h3>
+<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
       </section>
     </div>
-  </div>
-  
-  </div>
-  
-  <footer>
-  <section>
-  <span>Copyright &copy; 2013 <a href="http://robertwdempsey.com?ref=thanks-for-your-repo">Robert Dempsey</a>. Released under the MIT License on <a href="https://github.com/rdempsey/thanks-for-your-repo">GitHub</a>.</span>
 
-  </section>
-  </footer>
-</div>
-  <script src="js/script.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/css3-mediaqueries.js"></script> 
-  <script type="text/javascript" src="js/retina.js"></script>
-  
-  <script>
-    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
-</body>
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Thanks For Your Repo maintained by <a href="https://github.com/rdempsey">rdempsey</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
 </html>
