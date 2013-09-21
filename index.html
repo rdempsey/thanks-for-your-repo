@@ -1,24 +1,12 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
     <title>Thanks For Your Repo</title>
     <meta name="description" content="Thanks For Your Repo : Add a button to your README and get thanked for your project. http://rdempsey.github.io/thanks-for-your-repo/" />
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script> 
-    <script src="http://malsup.github.com/jquery.form.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function() { 
-    var options = { 
-        beforeSubmit:  showRequest,  // pre-submit callback 
-    }; 
-    $('#inputForm').ajaxForm(options); 
-      });
-    </script>
   </head>
-
   <body>
 
     <!-- HEADER -->
@@ -91,7 +79,18 @@
         <p class="copyright">Copyright &copy; 2013 <a href="http://robertwdempsey.com?ref=thanks-for-your-repo">Robert Dempsey</a>. Released under the MIT License on <a href="https://github.com/rdempsey/thanks-for-your-repo">GitHub</a>.</p>
       </footer>
     </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script> 
+    <script src="http://malsup.github.com/jquery.form.js"></script>
     <script src="javascripts/script.js"></script>
     <script src="javascripts/plugins.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() { 
+      var options = { 
+          beforeSubmit:  showRequest,  // pre-submit callback 
+      }; 
+      $('#inputForm').ajaxForm(options); 
+        });
+    </script>
+
   </body>
 </html>
