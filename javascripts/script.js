@@ -28,7 +28,7 @@ function showRequest(formData, jqForm, options) {
 
   //Show an alert with the Twitter image link
   alert("Here's the code you want to put into your README: \n\n" +
-      "<a href=\"http://twitter.com/home/?status=Thanks @" + twitterHandle + " for making " + githubProjectName + ": " + githubRepoUrl + "\"><img src=\"http://placehold.it/100x50\" alt=\"Say Thanks\" /></a>"
+      "<a href=\"http://twitter.com/home/?status=Thanks @" + twitterHandle + " for making " + githubProjectName + ": " + githubRepoUrl + "\"><img src=\"https://s3.amazonaws.com/github-thank-you-button/thank-you-button.png" alt=\"Say Thanks\" /></a>"
   ); 
 
   // here we could return false to prevent the form from being submitted; 
