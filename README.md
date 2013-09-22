@@ -5,7 +5,7 @@ Thanks For Your Repo
 
 ## What is Thanks For Your Repo?
 
-People want to thank you for the open source project you created. Thanks For Your Repo makes it easy for people to do so. By filling out the form below with your Github repo URL and Twitter handle, we'll give you a piece of code that you can add to your README file that displays a little "Say Thanks" button. When someone clicks on that button, it'll create a thank you tweet that they can send out.
+People want to thank you for the open source project you created. Thanks For Your Repo makes it easy for people to do so. By filling out the form at [http://rdempsey.github.io/thanks-for-your-repo/](http://rdempsey.github.io/thanks-for-your-repo/) with your project name, Github repo URL and Twitter handle, we'll give you a piece of code that you can add to your README file that displays a little "Thank Me" button. When someone clicks on that button, it'll create a thank you tweet that they can send out.
 
 
 ## Basic Usage
